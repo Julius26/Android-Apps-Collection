@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.newactivity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnfacebook"
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_marginTop="18dp"
+        android:drawableLeft="@drawable/facebooks"
+        android:background="@color/colorAccent"
+        android:text="Facebook"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btncall"
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:drawableLeft="@drawable/call"
+        android:layout_marginTop="26dp"
+        android:text="Make a call"
+        android:textColor="#fff"
+        android:background="#53AB4F"
+        android:layout_below="@+id/btnfacebook"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnmap"
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:background="#EBC114"
+        android:textColor="#fff"
+        android:layout_alignParentStart="true"
+        android:drawableLeft="@drawable/map"
+        android:layout_below="@+id/btncall"
+        android:layout_marginTop="33dp"
+        android:text="Launch a map" />
+
+    <Button
+        android:id="@+id/btncamera"
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:drawableLeft="@drawable/cam"
+        android:background="#287DD7"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnmap"
+        android:layout_marginTop="29dp"
+        android:text="Take a photo" />
+
+    <Button
+        android:id="@+id/btnphonebook"
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btncamera"
+        android:layout_marginTop="17dp"
+        android:drawableLeft="@drawable/phonebook"
+        android:text="Get Contacts" />
+
+
+</android.widget.RelativeLayout>

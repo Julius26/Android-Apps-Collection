@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.farmking.Register">
+
+    <EditText
+        android:id="@+id/etfirstname"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:textAlignment="center"
+        android:inputType="textPersonName"
+        android:hint="Enter First Name" />
+
+    <EditText
+        android:id="@+id/etlastname"
+        android:layout_width="360sp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etfirstname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Last Name" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etlastname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:textAlignment="center"
+        android:ems="10"
+        android:hint="Enter email address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etpasswordreg"
+        android:layout_width="360sp"
+        android:layout_height="wrap_content"
+        android:hint="Enter password"
+        android:textAlignment="center"
+        android:layout_below="@+id/etemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btsubmit"
+        android:layout_width="160sp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etpasswordreg"
+        android:layout_below="@+id/etpasswordreg"
+        android:layout_marginTop="53dp"
+        android:hint="Submit" />
+
+</android.widget.RelativeLayout>

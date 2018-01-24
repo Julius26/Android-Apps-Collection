@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.gps.MainActivity">
+
+
+    <Button
+        android:id="@+id/gps"
+        android:layout_width="fill_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="141dp"
+        android:text="Button" />
+
+    <ProgressBar
+        android:id="@+id/gpspbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_below="@+id/gps"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp" />
+</android.widget.RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.content.Launch"
+    tools:showIn="@layout/activity_launch">
+
+
+    <Button
+        android:id="@+id/btnfacebook"
+        android:layout_width="351dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnmap"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="19dp"
+        android:background="@color/colorPrimary"
+        android:text="Facebook"
+        android:textColor="#fff"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <Button
+        android:id="@+id/btncall"
+        android:layout_width="351dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/btnmap"
+        android:layout_below="@+id/btnfacebook"
+        android:layout_marginTop="16dp"
+        android:background="@color/makeacall"
+        android:text="Make a call"
+        android:textColor="#fff"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="126dp" />
+
+
+    <Button
+        android:id="@+id/btnmap"
+        android:layout_width="353dp"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Launch a map"
+        android:textColor="#fff"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="212dp"
+        android:layout_below="@+id/btncall"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/btncamera"
+        android:layout_width="357dp"
+        android:layout_height="60dp"
+        android:background="#FF8000"
+        android:text="Take a Photo"
+        android:textColor="#fff"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="289dp"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/btncontacts"
+        android:layout_alignStart="@+id/btncall" />
+
+    <Button
+        android:id="@+id/btncontacts"
+        android:layout_width="357dp"
+        android:layout_height="60dp"
+
+        android:background="#FF00FF"
+        android:text="Phonebook"
+        android:textColor="#fff"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="363dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btncamera"
+        android:layout_marginBottom="64dp" />
+
+</android.widget.RelativeLayout>

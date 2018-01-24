@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mysqlite1</string>
+    <string name="title_activity_content_delete">Content_delete</string>
+</resources>

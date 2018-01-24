@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/ivdiseases"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/bloodpressure"
+        android:layout_weight="1.07" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="289dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/namedisease"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2sp"
+            android:paddingBottom="1sp"
+            android:textSize="30sp"
+            android:hint="Name of disease" />
+
+        <TextView
+            android:id="@+id/explanation"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:hint="Protective foods"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

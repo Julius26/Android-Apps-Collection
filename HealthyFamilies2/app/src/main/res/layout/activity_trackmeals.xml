@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.healthyfamilies.Trackmeals">
+
+    <EditText
+        android:id="@+id/etday"
+        android:layout_width="365sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="25sp"
+        android:textColorHint="#000"
+        android:hint="Add day of the week"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etcarbohydrate"
+        android:layout_width="365sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="23dp"
+        android:textSize="25sp"
+        android:textColorHint="#000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Add starch meal"
+        android:layout_below="@+id/etday"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etprotein"
+        android:layout_width="365sp"
+        android:layout_height="50sp"
+        android:ems="10"
+        android:textSize="25sp"
+        android:inputType="textPersonName"
+        android:textColorHint="#000"
+        android:hint="Add Protein meal"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/etvitamin"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etvitamin"
+        android:layout_width="365sp"
+        android:layout_height="50sp"
+        android:ems="10"
+        android:textSize="25sp"
+        android:inputType="textPersonName"
+        android:textColorHint="#000"
+        android:hint="Add Vitamin rich food"
+        android:layout_above="@+id/btsave"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:hint="SAVE"
+        android:layout_alignBaseline="@+id/btview"
+        android:layout_alignBottom="@+id/btview"
+        android:layout_alignStart="@+id/btdelete" />
+
+    <Button
+        android:id="@+id/btview"
+        android:layout_width="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:hint="VIEW"
+        android:layout_marginEnd="13dp"
+        android:layout_above="@+id/btsearch"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/btsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0ff"
+        android:hint="SEARCH"
+        android:layout_alignBaseline="@+id/btdelete"
+        android:layout_alignBottom="@+id/btdelete"
+        android:layout_alignStart="@+id/btview" />
+
+
+    <Button
+        android:id="@+id/btdelete"
+        android:layout_width="wrap_content"
+        android:background="#669"
+        android:layout_height="wrap_content"
+        android:hint="DELETE"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/etcarbohydrate"
+        android:layout_marginBottom="31dp"/>
+
+
+</android.widget.RelativeLayout>

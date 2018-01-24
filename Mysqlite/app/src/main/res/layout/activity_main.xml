@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.example.user.mysqlite.MainActivity">
+
+
+    <EditText
+        android:id="@+id/editRollNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="30sp"
+        android:background="#0ff"
+        android:hint="Type roll no"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editName" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:background="#0ff"
+        android:textSize="30sp"
+        android:inputType="textPersonName"
+        android:hint="Type Student Name"
+        android:layout_below="@+id/editRollNo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp" />
+
+    <EditText
+        android:id="@+id/editMarks"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editName"
+        android:layout_below="@+id/editName"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:textSize="30dp"
+        android:background="#0ff"
+        android:inputType="textPersonName"
+        android:hint="Type marks" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editMarks"
+        android:layout_below="@+id/editMarks"
+        android:layout_marginTop="34dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnAdd"
+        android:layout_alignParentEnd="true"
+        android:text="View" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAdd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="delete" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/delete"
+        android:layout_below="@+id/delete"
+        android:layout_marginTop="22dp"
+        android:text="Search" />
+
+</android.widget.RelativeLayout>

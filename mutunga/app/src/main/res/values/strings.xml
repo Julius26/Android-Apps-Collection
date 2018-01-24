@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">mutunga</string>
+
+    <string name="hint_username">type username</string>
+    <string name="hint_password">type password</string>
+    <string name="login">Login</string>
+    <string name="create_acccount">Have an account?Create one!</string>
+    <string name="your_name">type your surname</string>
+    <string name="name">your first name</string>
+    <string name="age">input age</string>
+    <string name="password">type password</string>
+    <string name="register">Register</string>
+    <string name="already">Already have an account?Log in</string>
+
+
+</resources>

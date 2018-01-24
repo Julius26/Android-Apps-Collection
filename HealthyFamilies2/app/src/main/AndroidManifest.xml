@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.healthyfamilies">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/family"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Balanceddiet"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Trackmeals"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Delete"
+            android:parentActivityName=".Trackmeals" />
+        <activity
+            android:name=".Search"
+            android:parentActivityName=".Trackmeals" />
+
+        <receiver android:name=".Alarm" />
+
+        <activity
+            android:name=".Carbohydrates"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Protein"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Vitamins"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Minerals"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Diseases"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Refined"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Rhoughages"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Homeremedy" android:parentActivityName=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>

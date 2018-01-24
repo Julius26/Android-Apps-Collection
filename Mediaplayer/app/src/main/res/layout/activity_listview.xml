@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.mediaplayer.Listview">
+
+    <ListView
+        android:layout_width="100sp"
+        android:layout_height="480sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/lstcarbo" />
+
+    <ListView
+        android:layout_width="100sp"
+        android:id="@+id/lstvitamins"
+        android:layout_height="480sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="100sp"
+        android:id="@+id/lstprotein"
+        android:layout_height="480sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/carbohydrates"
+        android:layout_width="80sp"
+        android:layout_height="30sp"
+        android:hint="Carbohydrates"
+        android:layout_above="@+id/lstcarbo"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/lstcarbo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/carbohydrates"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+
+
+</android.widget.RelativeLayout>

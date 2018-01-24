@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ReferralHospital</string>
+    <string name="title_activity_hospitallocation">Map</string>
+    <string name="title_activity_karenhospital">Map</string>
+    <string name="title_activity_kenyattahospital">Map</string>
+    <string name="title_activity_matharehospital">Map</string>
+    <string name="title_activity_mamalucyhospital">Map</string>
+    <string name="title_activity_getrudeshospital">Map</string>
+    <string name="title_activity_langata">Map</string>
+    <string name="title_activity_nyeri">Map</string>
+    <string name="title_activity_goodlife">Map</string>
+</resources>
